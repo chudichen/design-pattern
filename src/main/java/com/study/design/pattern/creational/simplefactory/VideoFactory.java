@@ -1,6 +1,8 @@
 package com.study.design.pattern.creational.simplefactory;
 
 /**
+ * 根据传入参数，来返回具体的实例
+ *
  * @author Michael.Chu
  * @date 2019-04-07 14:32
  */
