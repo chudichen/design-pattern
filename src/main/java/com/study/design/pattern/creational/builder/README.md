@@ -110,7 +110,7 @@ Hero mage = new Hero.Builder(Profession.MAGE, "Michael").withHairColor(HairColor
 * [java.lang.StringBuilder](http://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html)
 * [java.nio.ByteBuffer](http://docs.oracle.com/javase/8/docs/api/java/nio/ByteBuffer.html#put-byte-)其他的Buffer，如FloatBuffer，IntBuffer也一样。
 * [java.lang.StringBuffer](http://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html#append-boolean-)
-* [java.lang.Appendable]中所有的实现类(http://docs.oracle.com/javase/8/docs/api/java/lang/Appendable.html)
+* [java.lang.Appendable](http://docs.oracle.com/javase/8/docs/api/java/lang/Appendable.html)中所有的实现类
 * [Apache Camel builders](https://github.com/apache/camel/tree/0e195428ee04531be27a0b659005e3aa8d159d23/camel-core/src/main/java/org/apache/camel/builder)
 
 ## 引用
