@@ -14,6 +14,7 @@
       <module>builder</module>
       <module>factory-method</module>
       <module>simple-factory</module>
+      <module>adapter</module>
     </modules>
     <name>design_pattern</name>
 
