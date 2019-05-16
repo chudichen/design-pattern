@@ -16,6 +16,8 @@
       <module>simple-factory</module>
       <module>adapter</module>
         <module>flyweight</module>
+        <module>composite</module>
+      <module>proxy</module>
     </modules>
     <name>design_pattern</name>
 
