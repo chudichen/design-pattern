@@ -15,6 +15,7 @@
       <module>factory-method</module>
       <module>simple-factory</module>
       <module>adapter</module>
+        <module>flyweight</module>
     </modules>
     <name>design_pattern</name>
 
