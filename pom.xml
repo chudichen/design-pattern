@@ -3,29 +3,48 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <groupId>com.michael</groupId>
   <artifactId>design-pattern</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0.0</version>
-    <modules>
-        <module>principle</module>
-      <module>abstract-factory</module>
-      <module>builder</module>
-      <module>factory-method</module>
-      <module>simple-factory</module>
-      <module>adapter</module>
-        <module>flyweight</module>
-        <module>composite</module>
-      <module>proxy</module>
-        <module>bridge</module>
-    </modules>
-    <name>design_pattern</name>
+  <packaging>pom</packaging>
+  <version>1.0.0</version>
+  <inceptionYear>2019</inceptionYear>
+  <modules>
+    <module>principle</module>
+    <module>abstract-factory</module>
+    <module>builder</module>
+    <module>factory-method</module>
+    <module>simple-factory</module>
+    <module>adapter</module>
+    <module>flyweight</module>
+    <module>composite</module>
+    <module>proxy</module>
+    <module>bridge</module>
+    <module>dependency-injection</module>
+  </modules>
+  <name>design_pattern</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
+    <hibernate.version>5.0.1.Final</hibernate.version>
+    <spring.version>4.2.4.RELEASE</spring.version>
+    <spring-boot.version>1.3.3.RELEASE</spring-boot.version>
+    <spring-data.version>1.9.2.RELEASE</spring-data.version>
+    <h2.version>1.4.190</h2.version>
+    <junit.version>4.12</junit.version>
+    <junit-jupiter.version>5.0.2</junit-jupiter.version>
+    <junit-vintage.version>${junit.version}.2</junit-vintage.version>
+    <junit-platform.version>1.0.2</junit-platform.version>
+    <sping-test-junit5.version>1.0.2</sping-test-junit5.version>
+    <compiler.version>3.0</compiler.version>
+    <jacoco.version>0.7.2.201409121644</jacoco.version>
+    <commons-dbcp.version>1.4</commons-dbcp.version>
+    <camel.version>2.16.1</camel.version>
+    <guava.version>19.0</guava.version>
+    <mockito.version>1.10.19</mockito.version>
+    <apache-httpcomponents.version>4.5.2</apache-httpcomponents.version>
+    <htmlunit.version>2.22</htmlunit.version>
     <guice.version>4.0</guice.version>
     <mongo-java-driver.version>3.3.0</mongo-java-driver.version>
     <slf4j.version>1.7.21</slf4j.version>
@@ -35,26 +54,57 @@
     <aws-lambda-log4j.version>1.0.0</aws-lambda-log4j.version>
     <aws-lambda-java-events.version>2.0.1</aws-lambda-java-events.version>
     <jackson.version>2.8.5</jackson.version>
+    <lombok.version>1.16.22</lombok.version>
   </properties>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.11</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>RELEASE</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.16.22</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>${logback.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-core</artifactId>
+        <version>${logback.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.15</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.inject</groupId>
+        <artifactId>guice</artifactId>
+        <version>${guice.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-api</artifactId>
-      <version>RELEASE</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>1.16.22</version>
-    </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
@@ -71,9 +121,9 @@
       <version>${logback.version}</version>
     </dependency>
     <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.15</version>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
     </dependency>
   </dependencies>
 
