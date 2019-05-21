@@ -10,7 +10,6 @@ import com.michael.flux.view.MenuView;
 /**
  * Flux是一个软件应用架构，facebook使用它来构建客户端web应用。
  *
- *
  * @author Michael Chu
  * @date 2019-05-20 15:36
  */
