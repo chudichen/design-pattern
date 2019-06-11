@@ -21,8 +21,9 @@
     <module>bridge</module>
     <module>dependency-injection</module>
     <module>observer</module>
-      <module>flux</module>
-      <module>abstract-document</module>
+    <module>flux</module>
+    <module>abstract-document</module>
+    <module>acyclic-visitor</module>
   </modules>
   <name>design_pattern</name>
 
