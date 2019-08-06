@@ -21,4 +21,5 @@ public class App {
         businessDelegate.setServiceType(ServiceType.JMS);
         client.doTask();
     }
+
 }

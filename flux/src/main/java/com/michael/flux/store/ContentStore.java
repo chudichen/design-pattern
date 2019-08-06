@@ -29,4 +29,5 @@ public class ContentStore extends Store {
     public Content getContent() {
         return content;
     }
+
 }
