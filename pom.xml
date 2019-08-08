@@ -26,10 +26,12 @@
     <module>acyclic-visitor</module>
     <module>aggregator-microservices</module>
     <module>ambassador</module>
-      <module>async-method-invocation</module>
-      <module>balking</module>
-      <module>business-delegate</module>
-      <module>caching</module>
+    <module>async-method-invocation</module>
+    <module>balking</module>
+    <module>business-delegate</module>
+    <module>caching</module>
+    <module>callback</module>
+    <module>chain</module>
   </modules>
   <name>design_pattern</name>
 
